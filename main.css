@@ -1,0 +1,60 @@
+/*--------------
+  Sidebar Button
+---------------*/
+.fixed.launch.button {
+    display: none;
+    position: fixed;
+    top: 2.5em;
+    left: 0px;
+
+    width: 55px;
+    height: auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#example .launch.button .icon {
+    margin-left: 0px;
+}
+
+
+#example .fixed.launch.button.menu-text {
+    position: absolute;
+    white-space: nowrap;
+    top: auto;
+    left: 54px;
+}
+
+#example .menu-text{
+    opacity: 0;
+}
+
+
+#left-menu.ui.left.demo.vertical.sidebar.labeled.icon.menu.inverted>.item>.icon:not(.dropdown) {
+    font-size: 5em !important;
+}
+
+
+.resume {
+    padding-top: 30px;
+}
+
+.ui.piled.segment {
+    font-size: 1.14285714rem;
+}
+
+
+/*--------------
+  Content
+---------------*/
+#resume {
+    padding-top: 5%;
+}
+
+#intro {
+    padding-top: 30px
+}
+
+#intro > p {
+    opacity: 50;
+}

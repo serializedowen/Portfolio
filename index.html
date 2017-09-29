@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script
+                src="https://code.jquery.com/jquery-3.1.1.min.js"
+                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                crossorigin="anonymous"></script>
+        <script src="semantic/dist/semantic.min.js"></script>
+        <script src="semantic/dist/components/sticky.js"></script>
+    </head>
+    <body id="example">
+        <div class="ui left demo vertical wide sidebar labeled icon menu inverted" id="left-menu">
+            <a class="item">
+                <i class="home icon"></i>
+                Home
+            </a>
+            <a class="item">
+                <i class="block layout icon"></i>
+                Projects
+            </a>
+            <a class="item">
+                <i class="smile icon"></i>
+                Experience
+            </a>
+
+            <a class="item">
+                <i class="linkedin icon"></i>
+                Linkedin
+            </a>
+
+            <a class="item">
+                <i class="github icon"></i>
+                Github
+            </a>
+        </div>
+
+        <div class="ui black big launch right attached fixed button side-bar-button">
+            <i class="content icon inverted"></i>
+            <span class="menu-text">Menu</span>
+        </div>
+
+        <div class="ui main text container" id="resume">
+            <img class="ui small circular image dividing" src="./assets/Profile.jpg">
+            <div class="ui horizontal divider"></div>
+            <div class="ui three item stackable tabs menu">
+                <a class="item" data-tab="Introduction">Introduction</a>
+                <a class="item" data-tab="Education">Education</a>
+                <a class="item" data-tab="Skills">Skills</a>
+            </div>
+
+            <div class="ui tab active" data-tab="Introduction">
+                <div class="ui main text container" id="intro">
+                    <div class="ui piled segment">
+                        <h1 class="ui dividing header">About ME</h1>
+                        <p>As a new graduate specializing in Computer Science at the University of Toronto,
+                            I developed excellent technical skills.</p>
+                        <p>Through my focus and determination, I officially achieved
+                            the Honours of Bachelor of Science with High Distinction degree in November 2016.</p>
+
+                        <p>Meanwhile, through my previous work experience, I have become proficient in designing and developing
+                            applications using programing languages such as Java, Python & Javascript, and have experienced with
+                            Cloud-Based Development, and Automation and Testing. Furthermore, I am familiar with the software
+                            development life cycle and Agile development methods.</p>
+                    </div>
+
+                    <div class="resume ui buttons">
+                        <button class="ui huge button"
+                                type="submit"
+                                onclick="window.open('./assets/Yuan_Wang_Resume.pdf')">
+                            <i class="file pdf outline icon"></i>Preview
+                        </button>
+                        <div class="or"></div>
+                        <a href="./assets/" download="Yuan_Wang_Resume.pdf"><button class="ui huge button">
+                            <i class="download icon"></i>Save Resume
+                        </button></a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="ui tab" data-tab="Education">
+                <div class="ui main text container" id="intro">
+                    <div class="ui piled segment">
+                        <h1 class="ui dividing header">Education</h1>
+                        <div class="ui grid">
+                            <div class="four column row">
+                                <div class="eight wide column">
+                                    <h3>University of Toronto</h3>
+                                    <p>September 2012 - June 2017</p>
+                                    <p>
+                                </div>
+                                <div class="right floated column">
+                                    <img class="ui image massive" src="./assets/u_of_t.png"/>
+                                </div>
+                            </div>
+
+                            <div class="four column row">
+                                <div class="ten wide column">
+                                    <h3>Honours of Bachelor of Science with Distinction</h3>
+                                    <ul>
+                                        <li>Specialist Program in Computer Science</li>
+                                        <li>Focus in Artificial Intelligence</li>
+                                        <li>3.3/4 & 80/100 Grade Average</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="four column row">
+                                <div class="twelve wide column">
+                                    <h3>Teaching Assistant</h3>
+                                    <ul>
+                                        <li>Introduction to Artificial Intelligence (CSC384) - Winter 2017</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <div class="ui segment">
+                                    <a style="cursor: pointer;" class="intro-image" id="friends-img"><img src="./assets/friends.jpg" style="max-height: 220px;"></a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="ui segment">
+                                    <a style="cursor: pointer;" class="intro-image" id="parents-img"><img src="./assets/parents.jpg" style="max-height: 220px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ui tab" data-tab="Skills">
+                <div class="ui main text container" id="intro">
+                    <h2 class="ui dividing header">Skills</h2>
+                    <p>As a new graduate specializing in Computer Science at the University of Toronto,
+                        I developed excellent technical skills.</p>
+                    <p>Through my focus and determination, I officially achieved
+                        the Honours of Bachelor of Science with High Distinction degree in November 2016.</p>
+
+                    <p>Meanwhile, through my previous work experience, I have become proficient in designing and developing
+                        applications using programing languages such as C, Java and Python, and have experienced with
+                        Cloud-Based Development, and Automation and Testing. Furthermore, I am familiar with the software
+                        development life cycle and Agile development methods.</p>
+                </div>
+            </div>
+        </div>
+
+        <img class="ui modal pic-modal" src="" style="width: 50%;">
+
+
+
+
+
+
+        <script>
+            $('#left-menu').first()
+                .sidebar('setting', {transition: 'overlay'})
+                .sidebar('attach events', '.side-bar-button')
+            ;
+
+            $(".side-bar-button").hover(
+                function() {
+                    $(".fixed.launch.button").animate({width:"120px"}, 200);
+                    $(".menu-text").animate({opacity:"100"}, 200)
+                },
+                function () {
+                    $(".fixed.launch.button").animate({width:"55px"}, 200);
+                    $(".menu-text").animate({opacity:"0"}, 200)
+                });
+
+            $('.menu .item')
+                .tab()
+            ;
+
+            $('.ui.modal')
+                .modal('attach events', 'show')
+            ;
+
+
+            $(function(){
+                $("#friends-img").click(function(){
+                    $(".pic-modal").attr("src", "./assets/friends.jpg").modal('show');
+                });
+
+                $("#parents-img").click(function(){
+                    $(".pic-modal").attr("src", "./assets/parents.jpg").modal('show');
+                });
+
+
+
+
+                $(".pic-modal").modal({
+                    closable: true
+                });
+            });
+
+
+
+        </script>
+
+    </body>
+
+</html>
