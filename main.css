@@ -13,6 +13,13 @@
     overflow: hidden;
 }
 
+
+.fixed.launch.button.disappear {
+    opacity: 0;
+}
+
+
+
 #example .launch.button .icon {
     margin-left: 0px;
 }
@@ -42,6 +49,19 @@
 .ui.piled.segment {
     font-size: 1.14285714rem;
 }
+
+#rotated{
+    -moz-transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+
+#rotated.down{
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+}
+
 
 
 /*--------------
