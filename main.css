@@ -71,8 +71,8 @@
     padding-top: 5%;
 }
 
-#intro {
-    padding-top: 30px
+.intro {
+    padding-top: 30px;
 }
 
 #intro > p {
