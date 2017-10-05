@@ -62,13 +62,19 @@
     transform:rotate(90deg);
 }
 
+.sticky.fixed.bottom {
+    width: 100%;
+}
 
+.pusher {
+    padding-bottom: 10em;
+}
 
 /*--------------
   Content
 ---------------*/
 #resume {
-    padding-top: 5%;
+    padding-top: 6em;
 }
 
 .intro {
