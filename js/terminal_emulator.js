@@ -1,11 +1,14 @@
 var answers = [
-    "Yuan Wang",
-    "> University of Toronto",
-    "> June 2017",
-    "> Java, Python, Javascript",
-    "> Sanofi Pasteur",
-    "> Coding, Tennis, Soccer, Hiking",
-    "> Junior Software & Web Developer Positions<span class='blinking-cursor'>_</span>"
+    "~$ Yuan Wang",
+    "~$ <a href='mailto:wangyuan0915@gmail.com?Subject=Hello%20Yuan'>wangyuan0915@gmail.com</a>",
+    "~$ <a href='http://web.cs.toronto.edu'>University of Toronto</a>",
+    "~$ June 2017",
+    "~$ Java, Python, Javascript",
+    "~$ Sanofi Pasteur as Web & Data Developer Intern",
+    "~$ Coding, Tennis, Soccer, Hiking",
+    "~$ Junior Software & Web Developer Positions",
+    "~$ <a href='./assets/Yuan_Wang_Resume.pdf'>Yuan Wang's Resume</a><span class='blinking-cursor'>_</span>"
+
 ];
 
 
@@ -13,8 +16,7 @@ var $lines = $('.prompt p');
 $lines.hide();
 var lineContents = new Array();
 
-var terminal = function() {
-
+function terminal() {
     var skip = 0;
     typeLine = function(idx) {
         idx == null && (idx = 0);
@@ -22,6 +24,8 @@ var terminal = function() {
         var content = lineContents[idx];
         if(typeof content == "undefined") {
             $('.skip').hide();
+            //console.log("haha!");
+            // callback();
             return;
         }
         var charIdx = 0;
@@ -42,7 +46,7 @@ var terminal = function() {
             }, skip ? 0 : rand);
         }
         // content = content + '"';
-        element.append('~$ ').addClass('activeTerminal');
+        element.append('> ').addClass('activeTerminal');
         typeChar();
     }
 
@@ -51,9 +55,24 @@ var terminal = function() {
         $(this).text('').show();
     });
 
-    typeLine()
+    typeLine();
 }
 
+
+// function cons() {
+//     $('#resumeButton').removeClass('hidetemp');
+//     $('#resumeButton').transition('fade in');
+// }
+
+
+// terminal(
+//     function () {
+//         cons();
+//     });
 terminal();
 
-// $.when(terminal()).then($('.prompt').append('<span class="blinking-cursor">_</span>'));
+
+
+// terminal.then(function () {
+//     console.log("hello");
+// });

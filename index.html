@@ -60,8 +60,7 @@
                 <div class="ui tab active" data-tab="Introduction">
                     <div class="ui main container intro">
                         <div class="ui piled segment">
-
-                            <div class="ui ribbon label"><h3>About ME</h3></div>
+                            <div class="ui ribbon label" id="AboutMe"><h3>About ME</h3></div>
 
                             <!--<p>As a new graduate specializing in Computer Science at the University of Toronto,-->
                                 <!--I developed excellent technical skills.</p>-->
@@ -75,30 +74,41 @@
 
                             <div class="ui horizontal divider"></div>
 
+                            <div class="window">
+                                <nav>
+                                    <a class="close"></a>
+                                    <a class="minimize"></a>
+                                    <a class="maximize"></a>
+                                </nav>
 
-                            <div class="prompt">
-                                <p>Name: </p>
-                                <p>Yuan's Education: </p>
-                                <p>Yuan's Graduation Date: </p>
-                                <p>Yuan's Program Languages: </p>
-                                <p>Yuan's Program Work Experience: </p>
-                                <p>Yuan's Hobbies: </p>
-                                <p>Yuan's Looking for: </p>
+                                <div class="prompt">
+                                    <br/>
+                                    <p class="output">My Name: </p>
+                                    <p class="output">My Email:</p>
+                                    <p class="output">My Education: </p>
+                                    <p class="output">My Graduation Date: </p>
+                                    <p class="output">I'm Solid in: </p>
+                                    <p class="output">My Work Experience: </p>
+                                    <p class="output">My Hobbies: </p>
+                                    <p class="output">I'm Looking for: </p>
+                                    <p class="output">My Resume: </p>
+                                </div>
                             </div>
 
 
-                        </div>
+                            <!--<div class="resume ui buttons hidetemp" id="resumeButton">-->
+                                <!--<button class="ui huge button"-->
+                                        <!--type="submit"-->
+                                        <!--onclick="window.open('./assets/Yuan_Wang_Resume.pdf')">-->
+                                    <!--<i class="file pdf outline icon"></i>Preview-->
+                                <!--</button>-->
+                                <!--<div class="or"></div>-->
+                                <!--<a href="./assets/" download="Yuan_Wang_Resume.pdf"><button class="ui huge button">-->
+                                    <!--<i class="download icon"></i>Save Resume-->
+                                <!--</button></a>-->
+                            <!--</div>-->
 
-                        <div class="resume ui buttons">
-                            <button class="ui huge button"
-                                    type="submit"
-                                    onclick="window.open('./assets/Yuan_Wang_Resume.pdf')">
-                                <i class="file pdf outline icon"></i>Preview
-                            </button>
-                            <div class="or"></div>
-                            <a href="./assets/" download="Yuan_Wang_Resume.pdf"><button class="ui huge button">
-                                <i class="download icon"></i>Save Resume
-                            </button></a>
+
                         </div>
 
                     </div>
@@ -172,9 +182,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
-
 
                         </div>
                     </div>
