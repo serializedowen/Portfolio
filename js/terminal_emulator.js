@@ -6,9 +6,7 @@ var answers = [
     "~$ Java, Python, Javascript",
     "~$ Sanofi Pasteur as Web & Data Developer Intern",
     "~$ Coding, Tennis, Soccer, Hiking",
-    "~$ Junior Software & Web Developer Positions",
-    "~$ <a href='./assets/Yuan_Wang_Resume.pdf'>Yuan Wang's Resume</a><span class='blinking-cursor'>_</span>"
-
+    "~$ Junior Software & Web Developer Positions<span class='blinking-cursor'>_</span>"
 ];
 
 

@@ -9,14 +9,17 @@
     <!-- Site Properties -->
     <title>Homepage - Semantic</title>
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/terminal_emulator.css">
+
     <script
             src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
             crossorigin="anonymous"></script>
     <script src="semantic/dist/semantic.min.js"></script>
     <script src="semantic/dist/components/sticky.js"></script>
+    <script src="js/text-animation.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/default.css">
 </head>
 <body>
 
@@ -55,32 +58,42 @@
                 <a class="item">Careers</a>
             </div>
         </div>
-
-        <div class="ui text container">
-            <h1 class="ui inverted header">
-                Yuan Wang
-            </h1>
-            <h2>Welcome to my playground</h2>
-        </div>
+        <section id="london">
+            <div class="ui text container header-text">
+                <h1 class="ui inverted header" id="op">Yuan Wang</h1>
+                <h2 id="op2">Welcome to my playground</h2>
+            </div>
+        </section>
 
     </div>
 
     <div class="ui vertical stripe segment">
         <div class="ui middle aligned stackable grid container">
             <div class="row">
+
                 <div class="eight wide column">
-                    <h3 class="ui header">We Help Companies and Companions</h3>
-                    <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
-                    <h3 class="ui header">We Make Bananas That Can Dance</h3>
-                    <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
+                    <div class="window">
+                        <nav>
+                            <a class="close"></a>
+                            <a class="minimize"></a>
+                            <a class="maximize"></a>
+                        </nav>
+                        <div class="prompt">
+                            <br/>
+                            <p class="output">My Name: </p>
+                            <p class="output">My Email:</p>
+                            <p class="output">My Education: </p>
+                            <p class="output">My Graduation Date: </p>
+                            <p class="output">I'm Solid in: </p>
+                            <p class="output">My Work Experience: </p>
+                            <p class="output">My Hobbies: </p>
+                            <p class="output">I'm Looking for: </p>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="six wide right floated column">
                     <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
-                </div>
-            </div>
-            <div class="row">
-                <div class="center aligned column">
-                    <a class="ui huge button">Check Them Out</a>
                 </div>
             </div>
         </div>
@@ -150,5 +163,6 @@
 </div>
 
 </body>
+<script src="js/terminal_emulator.js"></script>
 
 </html>
