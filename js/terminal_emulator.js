@@ -79,7 +79,7 @@ $(window).on('scroll.myscroll1',function() {
 
 
 $(window).on('scroll.myscroll2',function() {
-    if (checkVisible($('#progress_container'))) {
+    if (checkVisible($('#last_progress'))) {
         $('.progress').progress(
             {
                 showActivity: false

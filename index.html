@@ -1,451 +1,300 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <script
-                src="https://code.jquery.com/jquery-3.1.1.min.js"
-                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-                crossorigin="anonymous"></script>
-        <script src="semantic/dist/semantic.min.js"></script>
-        <script src="semantic/dist/components/sticky.js"></script>
+<html>
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    </head>
-    <body id="example">
-        <div class="ui left demo vertical sidebar labeled icon menu inverted" id="left-menu">
-            <a class="item">
-                <i class="home icon"></i>
-                Home
-            </a>
-            <a class="item">
-                <i class="block layout icon"></i>
-                Projects
-            </a>
-            <a class="item">
-                <i class="smile icon"></i>
-                Experience
-            </a>
+    <!-- Site Properties -->
+    <title>Homepage - Semantic</title>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/terminal_emulator.css">
 
-            <a class="item" href="https://www.linkedin.com/in/wangyuan0915/">
-                <i class="linkedin icon"></i>
-                Linkedin
-            </a>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <script src="semantic/dist/components/sticky.js"></script>
+    <script src="js/text-animation.js"></script>
 
-            <a class="item" href="https://github.com/wangyuan0915">
-                <i class="github icon"></i>
-                Github
-            </a>
+</head>
+<body>
+
+<!-- Following Menu -->
+<div class="ui large top fixed hidden menu">
+    <div class="ui container">
+        <a class="active item">Home</a>
+        <a class="item">Work</a>
+        <a class="item">Company</a>
+        <a class="item">Careers</a>
+    </div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+    <a class="active item">Home</a>
+    <a class="item">Work</a>
+    <a class="item">Company</a>
+    <a class="item">Careers</a>
+    <a class="item">Login</a>
+</div>
+
+
+<!-- Page Contents -->
+<div class="pusher">
+    <div class="ui inverted vertical masthead center aligned segment" id="masthead_top">
+
+        <div class="ui container">
+            <div class="ui large secondary inverted pointing menu">
+                <a class="toc item">
+                    <i class="sidebar icon"></i>
+                </a>
+                <a class="active item">About ME</a>
+                <a class="item">Skills</a>
+                <a class="item">Education</a>
+                <a class="item">Experience</a>
+                <a class="item">Projects</a>
+            </div>
         </div>
+        <section id="london">
+            <div class="ui text container header-text">
+                <h1 class="ui inverted header" id="op">Yuan Wang</h1>
+                <h2 id="op2">Welcome to my playground</h2>
+            </div>
+        </section>
 
-        <div class="ui black big launch right attached fixed button side-bar-button">
-            <i class="content icon inverted" id="rotated"></i>
-            <span class="menu-text">Menu</span>
-        </div>
+    </div>
 
-        <div class="pusher">
-            <div class="ui main container" id="resume">
-                <div class="ui small rotate reveal image circular rotate" style="cursor: pointer;">
-                    <img class="visible content" src="./assets/Profile.jpg">
-                    <img id="profile2" class="hidden content"src="./assets/Profile2.jpg">
-                </div>
-                <div class="ui horizontal divider"></div>
-                <div class="ui three item stackable tabs menu">
-                    <a class="item" data-tab="Introduction">Introduction</a>
-                    <a class="item" data-tab="Education">Education</a>
-                    <a class="item" data-tab="Skills">Skills</a>
-                </div>
+    <div class="ui vertical stripe segment">
+        <div class="ui middle aligned stackable grid container">
 
-                <div class="ui tab active" data-tab="Introduction">
-                    <div class="ui main container intro">
-                        <div class="ui piled segment">
-                            <div class="ui ribbon label" id="AboutMe"><h3>About ME</h3></div>
-
-                            <!--<p>As a new graduate specializing in Computer Science at the University of Toronto,-->
-                                <!--I developed excellent technical skills.</p>-->
-                            <!--<p>Through my focus and determination, I officially achieved-->
-                                <!--the Honours of Bachelor of Science with High Distinction degree in June 2017.</p>-->
-
-                            <!--<p>Meanwhile, through my previous work experience, I have become proficient in designing and developing-->
-                                <!--applications using programing languages such as Java, Python & Javascript, and have experienced with-->
-                                <!--Cloud-Based Development, and Automation and Testing. Furthermore, I am familiar with the software-->
-                                <!--development life cycle and Agile development methods.</p>-->
-
-                            <div class="ui horizontal divider"></div>
-
-                            <div class="window">
-                                <nav>
-                                    <a class="close"></a>
-                                    <a class="minimize"></a>
-                                    <a class="maximize"></a>
-                                </nav>
-
-                                <div class="prompt">
-                                    <br/>
-                                    <p class="output">My Name: </p>
-                                    <p class="output">My Email:</p>
-                                    <p class="output">My Education: </p>
-                                    <p class="output">My Graduation Date: </p>
-                                    <p class="output">I'm Solid in: </p>
-                                    <p class="output">My Work Experience: </p>
-                                    <p class="output">My Hobbies: </p>
-                                    <p class="output">I'm Looking for: </p>
-                                    <p class="output">My Resume: </p>
-                                </div>
-                            </div>
-
-
-                            <!--<div class="resume ui buttons hidetemp" id="resumeButton">-->
-                                <!--<button class="ui huge button"-->
-                                        <!--type="submit"-->
-                                        <!--onclick="window.open('./assets/Yuan_Wang_Resume.pdf')">-->
-                                    <!--<i class="file pdf outline icon"></i>Preview-->
-                                <!--</button>-->
-                                <!--<div class="or"></div>-->
-                                <!--<a href="./assets/" download="Yuan_Wang_Resume.pdf"><button class="ui huge button">-->
-                                    <!--<i class="download icon"></i>Save Resume-->
-                                <!--</button></a>-->
-                            <!--</div>-->
-
-
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div class="ui tab" data-tab="Education">
-                    <div class="ui main container intro">
-                        <div class="ui piled segment">
-
-                            <div class="ui grid">
-                                <a class="ui ribbon label"><h3>Education</h3></a>
-                                <div class="four column row">
-                                    <div class="eight wide column">
-                                        <h3>University of Toronto</h3>
-                                        <p>September 2012 - June 2017</p>
-                                        <p>
-                                    </div>
-                                    <div class="right floated column">
-                                        <img class="ui image massive" src="./assets/u_of_t.png"/>
-                                    </div>
-                                </div>
-
-                                <div class="four column row">
-                                    <div class="ten wide column">
-                                        <div class="ui ribbon label"><h3>Degree</h3></div>
-                                        <ul>
-                                            <li>Honours of Bachelor of Science with Distinction</li>
-                                            <li>Specialist Program in Computer Science</li>
-                                            <li>Focus in Artificial Intelligence</li>
-                                            <li>3.3/4 & 80/100 Grade Average</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="four column row">
-                                    <div class="twelve wide column">
-                                        <div class="ui ribbon label"><h3>Teaching Assistant</h3></div>
-                                        <ul>
-                                            <li>Introduction to Artificial Intelligence (CSC384) - Winter 2017</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="four column row">
-                                    <div class="twelve wide column">
-                                        <div class="ui ribbon label"><h3>Coursework</h3></div>
-                                        <ul>
-                                            <li>Computer Graphics</li>
-                                            <li>Introduction to Visual Computing</li>
-                                            <li>Natural Language Computing</li>
-                                            <li>Machine Learning and Data Mining</li>
-                                            <li>Neural Network and Machine Learning</li>
-                                            <li>Introduction to Artificial Intelligence</li>
-                                            <li>Knowledge Representation & Reasoning</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="left floated five wide column">
-                                <div class="ui ribbon label"><h3>Graduation Galleries</h3></div>
-
-                                <div class="ui horizontal divider"></div>
-                                <div class="ui two column stackable grid">
-                                    <div class="ui raised column">
-                                        <a style="cursor: pointer;" class="intro-image" id="friends-img"><img src="./assets/friends.jpg" class="ui massive bordered image"></a>
-                                    </div>
-                                    <div class="ui raised column">
-                                        <a style="cursor: pointer;" class="intro-image" id="parents-img"><img src="./assets/parents.jpg" class="ui massive bordered image"></a>
-                                    </div>
-                                </div>
-                            </div>
-
+            <div class="row">
+                <div class="eight wide column">
+                    <div class="window" id="window">
+                        <nav>
+                            <a class="close"></a>
+                            <a class="minimize"></a>
+                            <a class="maximize"></a>
+                        </nav>
+                        <div class="prompt">
+                            <br/>
+                            <p class="output">My Name: </p>
+                            <p class="output">My Email:</p>
+                            <p class="output">My Education: </p>
+                            <p class="output">My Graduation Date: </p>
+                            <p class="output">I'm Solid in: </p>
+                            <p class="output">My Work Experience: </p>
+                            <p class="output">My Hobbies: </p>
+                            <p class="output">I'm Looking for: </p>
                         </div>
                     </div>
                 </div>
 
-
-                <div class="ui tab" data-tab="Skills">
-                    <div class="ui main container intro">
-
-                        <div class="ui piled segment">
-
-
-                            <!--languages start-->
-
-
-                            <div class="ui ribbon label"><h3>Languages</h3></div>
-
-                            <div class="ui horizontal divider"></div>
-
-                            <div class="ui stackable two column grid">
-                                <div class="column">
-
-                                    <!--java start-->
-                                    <div class="ui progress" data-percent="90">
-                                        <div class="bar"></div>
-                                        <div class="label">Java</div>
-                                    </div>
-                                    <!--java end-->
-
-                                </div>
-
-                                <div class="column">
-
-                                    <!--Python start-->
-                                    <div class="ui progress" data-percent="95">
-                                        <div class="bar"></div>
-                                        <div class="label">Python</div>
-                                    </div>
-                                    <!--Python end-->
-
-                                </div>
-
-                                <div class="column">
-
-                                    <!--HTML/CSS start-->
-                                    <div class="ui progress" data-percent="95">
-                                        <div class="bar"></div>
-                                        <div class="label">HTML/CSS</div>
-                                    </div>
-                                    <!--HTML/CSS end-->
-
-                                </div>
-
-                                <div class="column">
-                                    <!--Javascript start-->
-                                    <div class="ui progress" data-percent="90">
-                                        <div class="bar"></div>
-                                        <div class="label">Javascript</div>
-                                    </div>
-                                    <!--Javascript end-->
-                                </div>
-
-
-                                <div class="column">
-                                    <!--Typescript start-->
-                                    <div class="ui progress" data-percent="80">
-                                        <div class="bar"></div>
-                                        <div class="label">Typescript</div>
-                                    </div>
-                                    <!--Typescript end-->
-                                </div>
-
+                <div class="six wide column">
+                    <div class="ui shape square">
+                        <div class="sides">
+                            <div class="first side active">
+                                <img src="./assets/Profile.jpg" class="ui large bordered rounded image">
                             </div>
-
-                            <div class="ui horizontal divider"></div>
-                            <!--languages end-->
-
-
-                            <!--Web Development start-->
-
-                            <div class="ui ribbon label"><h3>Web Development</h3></div>
-
-                            <div class="ui horizontal divider"></div>
-
-                            <div class="ui stackable two column grid">
-                                <div class="column">
-                                    <!--AngularJS start-->
-                                    <div class="ui progress" data-percent="80">
-                                        <div class="bar"></div>
-                                        <div class="label">AngularJS</div>
-                                    </div>
-                                    <!--AngularJS end-->
-                                </div>
-
-                                <div class="column">
-                                    <!--Angular2/4 start-->
-                                    <div class="ui progress" data-percent="90">
-                                        <div class="bar"></div>
-                                        <div class="label">Angular2/4</div>
-                                    </div>
-                                    <!--Angular2/4 end-->
-                                </div>
-
-                                <div class="column">
-                                    <!--Amazon Web Services(AWS) start-->
-                                    <div class="ui progress" data-percent="80">
-                                        <div class="bar"></div>
-                                        <div class="label">Amazon Web Services(AWS)</div>
-                                    </div>
-                                    <!--Amazon Web Services(AWS) end-->
-                                </div>
-
-                                <div class="column">
-                                    <!--Spring MVC start-->
-                                    <div class="ui progress" data-percent="70">
-                                        <div class="bar"></div>
-                                        <div class="label">Spring MVC</div>
-                                    </div>
-                                    <!--Spring MVC end-->
-                                </div>
+                            <div class="second side">
+                                <img src="./assets/Profile2.jpg" class="ui large bordered rounded image">
                             </div>
-
-                            <div class="ui horizontal divider"></div>
-                            <!--Web Development end-->
-
-
-                            <!--Data Visualization start-->
-                            <div class="ui ribbon label"><h3>Data Visualization</h3></div>
-
-                            <div class="ui horizontal divider"></div>
-
-                            <div class="ui stackable two column grid">
-                                <div class="column">
-                                    <!--HighCharts start-->
-                                    <div class="ui progress" data-percent="95">
-                                        <div class="bar"></div>
-                                        <div class="label">HighCharts</div>
-                                    </div>
-                                    <!--HighCharts end-->
-                                </div>
-
-                                <div class="column">
-                                    <!--D3.js start-->
-                                    <div class="ui progress" data-percent="70">
-                                        <div class="bar"></div>
-                                        <div class="label">D3.js</div>
-                                    </div>
-                                    <!--D3.js end-->
-                                </div>
-                            </div>
-
-                            <div class="ui horizontal divider"></div>
-                            <!--Data Visualization end-->
-
-
-                            <!--Version Control start-->
-                            <div class="ui ribbon label"><h3>Version Control</h3></div>
-
-                            <div class="ui horizontal divider"></div>
-
-                            <div class="ui stackable two column grid">
-                                <div class="column">
-                                    <!--Git start-->
-                                    <div class="ui progress" data-percent="90">
-                                        <div class="bar"></div>
-                                        <div class="label">Git</div>
-                                    </div>
-                                    <!--Git end-->
-                                </div>
-
-                                <div class="column">
-                                    <!--SVN start-->
-                                    <div class="ui progress" data-percent="90">
-                                        <div class="bar"></div>
-                                        <div class="label">SVN</div>
-                                    </div>
-                                    <!--SVN end-->
-                                </div>
-                            </div>
-
-                            <div class="ui horizontal divider"></div>
-                            <!--Version Control end-->
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="ui sticky fixed bottom inverted vertical footer segment">
-            <div class="ui container">
-                © 2016-2017 Yuan Wang
+
+    <div class="ui vertical stripe segment" id="talk_is_cheap">
+    </div>
+
+    <div class="ui vertical stripe segment">
+        <div class="ui middle aligned stackable grid container" id="progress_container">
+
+                <div class="five wide column center aligned">
+                    <h2 class="ui header">Languages</h2>
+
+                    <div class="ui small progress" data-percent="95">
+                        <div class="bar"></div>
+                        <div class="label">Javascript (ES6)</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="90">
+                        <div class="bar"></div>
+                        <div class="label">Java</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="95">
+                        <div class="bar"></div>
+                        <div class="label">Python</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="95">
+                        <div class="bar"></div>
+                        <div class="label">HTML</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="90">
+                        <div class="bar"></div>
+                        <div class="label">Css/Sass</div>
+                    </div>
+                </div>
+
+
+
+                <div class="five wide column center aligned">
+                    <h2 class="ui header">Tools</h2>
+
+                    <div class="ui small progress" data-percent="90">
+                        <div class="bar"></div>
+                        <div class="label">Git + Github</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="95">
+                        <div class="bar"></div>
+                        <div class="label">Command Line</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="90">
+                        <div class="bar"></div>
+                        <div class="label">Chrome DevTools</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="80">
+                        <div class="bar"></div>
+                        <div class="label">Gulp</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="80">
+                        <div class="bar"></div>
+                        <div class="label">MongoDB</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="90" id="last_progress">
+                        <div class="bar"></div>
+                        <div class="label">MySQL</div>
+                    </div>
+
+                </div>
+
+
+                <div class="five wide column center aligned ">
+                    <h2 class="ui header">Knowledge</h2>
+
+                    <div class="ui small progress" data-percent="90">
+                        <div class="bar"></div>
+                        <div class="label">Angular2/4</div>
+                    </div>
+
+
+                    <div class="ui small progress" data-percent="80">
+                        <div class="bar"></div>
+                        <div class="label">TDD</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="80">
+                        <div class="bar"></div>
+                        <div class="label">Agile Development</div>
+                    </div>
+                </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="ui vertical stripe segment">
+        <div class="ui text container">
+            <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
+            <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
+            <a class="ui large button">Read More</a>
+            <h4 class="ui horizontal header divider">
+                <a href="#">Case Studies</a>
+            </h4>
+            <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
+            <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
+            <a class="ui large button">I'm Still Quite Interested</a>
+        </div>
+    </div>
+
+
+    <div class="ui vertical stripe quote segment">
+        <div class="ui equal width stackable internally celled grid">
+            <div class="center aligned row">
+                <div class="column">
+                    <h3>"What a Company"</h3>
+                    <p>That is what they all say about us</p>
+                </div>
+                <div class="column">
+                    <h3>"I shouldn't have gone with their competitor."</h3>
+                    <p>Chief Fun Officer Acme Toys</p>
+                </div>
             </div>
         </div>
+    </div>
+
+
+    <div class="ui vertical stripe segment">
+        <div class="ui text container">
+            <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
+            <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
+            <a class="ui large button">Read More</a>
+            <h4 class="ui horizontal header divider">
+                <a href="#">Case Studies</a>
+            </h4>
+            <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
+            <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
+            <a class="ui large button">I'm Still Quite Interested</a>
+        </div>
+    </div>
 
 
 
-        <img class="ui modal pic-modal" src="" style="width: 50%;">
 
+    <div class="ui inverted vertical footer segment">
+        <div class="ui container">
+            <div class="ui stackable inverted divided equal height stackable grid">
+                <div class="three wide column">
+                    <h4 class="ui inverted header">About</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Sitemap</a>
+                        <a href="#" class="item">Contact Us</a>
+                        <a href="#" class="item">Religious Ceremonies</a>
+                        <a href="#" class="item">Gazebo Plans</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Services</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Banana Pre-Order</a>
+                        <a href="#" class="item">DNA FAQ</a>
+                        <a href="#" class="item">How To Access</a>
+                        <a href="#" class="item">Favorite X-Men</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">Footer Header</h4>
+                    <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-
-
-
-
-        <script>
-            $('#left-menu').first()
-                .sidebar('setting', {
-                    transition: 'push',
-                    dimPage: false,
-                    onVisible: function () {
-                        $(".side-bar-button").addClass("disappear");
-                    },
-                    onHide: function() {
-                        $(".side-bar-button").removeClass("disappear");
-                    }
-                })
-                .sidebar('attach events', '.side-bar-button', 'show');
-
-
-            $(".side-bar-button").hover(
-                function() {
-                    $("#rotated").toggleClass("down");
-                    $(".fixed.launch.button").animate({width:"120px"}, 200);
-                    $(".menu-text").animate({opacity:"100"}, 200);
-                },
-
-                function () {
-                    $("#rotated").toggleClass("down");
-                    $(".fixed.launch.button").animate({width:"55px"}, 200);
-                    $(".menu-text").animate({opacity:"0"}, 200)
-                });
-
-            $('.menu .item')
-                .tab()
-            ;
-
-            $('.ui.modal')
-                .modal('attach events', 'show')
-            ;
-
-
-            $(function(){
-                $("#friends-img").click(function(){
-                    $(".pic-modal").attr("src", "./assets/friends.jpg").modal('show');
-                });
-
-                $("#parents-img").click(function(){
-                    $(".pic-modal").attr("src", "./assets/parents.jpg").modal('show');
-                });
-
-                $(".pic-modal").modal({
-                    closable: true
-                });
-            });
-
-
-            $('.progress').progress(
-                {
-                    showActivity: false
-                });
-
-        </script>
-        <script src="js/terminal_emulator.js"></script>
-
-    </body>
+</body>
+<script src="js/terminal_emulator.js"></script>
+<script src="js/semantic_ui_helper.js"></script>
 
 </html>
