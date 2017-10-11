@@ -4,6 +4,4 @@ function pic_shape() {
     $('.shape').shape('flip up');
 }
 
-window.onload = function() {
-    pic_shape();
-}
+pic_shape();
