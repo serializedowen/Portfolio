@@ -65,6 +65,21 @@
     display: none;
 }
 
+
+#talk_is_cheap {
+    background: url("../assets/images/talk_is_cheap.jpg") no-repeat 50% 30% fixed;
+    background-size: cover;
+}
+
+
+.five.wide.column.center.aligned {
+    min-height: 330px;
+}
+
+
+
+
+
 @media only screen and (max-width: 700px) {
     .ui.fixed.menu {
         display: none !important;
@@ -88,3 +103,5 @@
         font-size: 1.5em;
     }
 }
+
+

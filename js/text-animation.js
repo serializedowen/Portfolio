@@ -23,11 +23,9 @@ var SPY = function() {
 $( 'document' ).ready(function() {
     // Hide header
     $( '.header-text' ).hide();
-
     // Timeout for crypto text
     setTimeout( function() {
         $( '.header-text' ).fadeIn( 'slow' );
         SPY.text( 'op' );
     }, 1000);
-
 });

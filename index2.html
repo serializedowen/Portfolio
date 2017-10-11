@@ -52,10 +52,11 @@
                 <a class="toc item">
                     <i class="sidebar icon"></i>
                 </a>
-                <a class="active item">Home</a>
-                <a class="item">Work</a>
-                <a class="item">Company</a>
-                <a class="item">Careers</a>
+                <a class="active item">About ME</a>
+                <a class="item">Skills</a>
+                <a class="item">Education</a>
+                <a class="item">Experience</a>
+                <a class="item">Projects</a>
             </div>
         </div>
         <section id="london">
@@ -69,10 +70,10 @@
 
     <div class="ui vertical stripe segment">
         <div class="ui middle aligned stackable grid container">
-            <div class="row">
 
+            <div class="row">
                 <div class="eight wide column">
-                    <div class="window">
+                    <div class="window" id="window">
                         <nav>
                             <a class="close"></a>
                             <a class="minimize"></a>
@@ -92,30 +93,127 @@
                     </div>
                 </div>
 
-                <div class="six wide right floated column">
-                    <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
+                <div class="six wide column">
+                    <div class="ui shape square">
+                        <div class="sides">
+                            <div class="first side active">
+                                <img src="./assets/Profile.jpg" class="ui large bordered rounded image">
+                            </div>
+                            <div class="second side">
+                                <img src="./assets/Profile2.jpg" class="ui large bordered rounded image">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <div class="ui vertical stripe quote segment">
-        <div class="ui equal width stackable internally celled grid">
-            <div class="center aligned row">
-                <div class="column">
-                    <h3>"What a Company"</h3>
-                    <p>That is what they all say about us</p>
+    <div class="ui vertical stripe segment" id="talk_is_cheap">
+    </div>
+
+    <div class="ui vertical stripe segment">
+        <div class="ui middle aligned stackable grid container" id="progress_container">
+
+                <div class="five wide column center aligned">
+                    <h2 class="ui header">Languages</h2>
+
+                    <div class="ui small progress" data-percent="90">
+                        <div class="bar"></div>
+                        <div class="label">Javascript (ES6)</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="90">
+                        <div class="bar"></div>
+                        <div class="label">Java</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="90">
+                        <div class="bar"></div>
+                        <div class="label">Python</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="90">
+                        <div class="bar"></div>
+                        <div class="label">HTML</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="90">
+                        <div class="bar"></div>
+                        <div class="label">Css/SaSS</div>
+                    </div>
                 </div>
-                <div class="column">
-                    <h3>"I shouldn't have gone with their competitor."</h3>
-                    <p>
-                        <img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
-                    </p>
+
+
+
+                <div class="five wide column center aligned">
+                    <h2 class="ui header">Tools</h2>
+
+                    <div class="ui small progress" data-percent="90">
+                        <div class="bar"></div>
+                        <div class="label">Git + Github</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="90">
+                        <div class="bar"></div>
+                        <div class="label">Command Line</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="90">
+                        <div class="bar"></div>
+                        <div class="label">Chrome DevTools</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="90">
+                        <div class="bar"></div>
+                        <div class="label">Gulp</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="90">
+                        <div class="bar"></div>
+                        <div class="label">MongoDB</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="90">
+                        <div class="bar"></div>
+                        <div class="label">MySQL</div>
+                    </div>
+
                 </div>
-            </div>
+
+
+                <div class="five wide column center aligned ">
+                    <h2 class="ui header">Knowledge</h2>
+
+                    <div class="ui small progress" data-percent="90">
+                        <div class="bar"></div>
+                        <div class="label">Angular2/4</div>
+                    </div>
+
+
+                    <div class="ui small progress" data-percent="90">
+                        <div class="bar"></div>
+                        <div class="label">TDD</div>
+                    </div>
+
+                    <div class="ui small progress" data-percent="90">
+                        <div class="bar"></div>
+                        <div class="label">Agile Development</div>
+                    </div>
+                </div>
+
+
+
+
+
         </div>
     </div>
+
+
+
+
+
 
     <div class="ui vertical stripe segment">
         <div class="ui text container">
@@ -130,6 +228,39 @@
             <a class="ui large button">I'm Still Quite Interested</a>
         </div>
     </div>
+
+
+    <div class="ui vertical stripe quote segment">
+        <div class="ui equal width stackable internally celled grid">
+            <div class="center aligned row">
+                <div class="column">
+                    <h3>"What a Company"</h3>
+                    <p>That is what they all say about us</p>
+                </div>
+                <div class="column">
+                    <h3>"I shouldn't have gone with their competitor."</h3>
+                    <p>Chief Fun Officer Acme Toys</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ui vertical stripe segment">
+        <div class="ui text container">
+            <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
+            <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
+            <a class="ui large button">Read More</a>
+            <h4 class="ui horizontal header divider">
+                <a href="#">Case Studies</a>
+            </h4>
+            <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
+            <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
+            <a class="ui large button">I'm Still Quite Interested</a>
+        </div>
+    </div>
+
+
 
 
     <div class="ui inverted vertical footer segment">
@@ -164,5 +295,6 @@
 
 </body>
 <script src="js/terminal_emulator.js"></script>
+<script src="js/semantic_ui_helper.js"></script>
 
 </html>

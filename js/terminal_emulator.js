@@ -6,7 +6,7 @@ var answers = [
     "~$ Java, Python, Javascript",
     "~$ Sanofi Pasteur as Web & Data Developer Intern",
     "~$ Coding, Tennis, Soccer, Hiking",
-    "~$ Junior Software & Web Developer Positions<span class='blinking-cursor'>_</span>"
+    "~$ Junior Software & Web Developer Positions<span class='blinking-cursor'>|</span>"
 ];
 
 
@@ -56,21 +56,43 @@ function terminal() {
     typeLine();
 }
 
+function checkVisible( elm, eval ) {
+    eval = eval || "object visible";
+    var viewportHeight = $(window).height(), // Viewport Height
+        scrolltop = $(window).scrollTop(), // Scroll Top
+        y = $(elm).offset().top,
+        elementHeight = $(elm).height();
 
-// function cons() {
-//     $('#resumeButton').removeClass('hidetemp');
-//     $('#resumeButton').transition('fade in');
-// }
-
-
-// terminal(
-//     function () {
-//         cons();
-//     });
-terminal();
+    if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+    if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+}
 
 
+$(window).on('scroll.myscroll1',function() {
+    if (checkVisible($('#window'))) {
+        terminal();
+        $(window).off('scroll.myscroll1');
+    } else {
+        // do nothing
+    }
+});
 
-// terminal.then(function () {
-//     console.log("hello");
-// });
+
+$(window).on('scroll.myscroll2',function() {
+    if (checkVisible($('#progress_container'))) {
+        $('.progress').progress(
+            {
+                showActivity: false
+            });
+        $(window).off('scroll.myscroll2');
+    } else {
+        // do nothing
+    }
+});
+
+
+
+
+
+
+
