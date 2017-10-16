@@ -72,11 +72,36 @@
 }
 
 
-.five.wide.column.center.aligned {
-    min-height: 330px;
+#progress_container {
+    background-color: #eee;
 }
 
 
+#aboutme {
+ background-color: #ddd;
+}
+
+
+.ui.items>.item>.image>a>img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: .125rem;
+    border: none;
+}
+
+.ui.items>.item>.content>.header.title:not(.ui){
+    font-size: 1.7em;
+}
+
+.desc {
+    font-size: 1.15em !important;
+}
+
+
+.ui.items>.item>.image+.content {
+    width: 100%;
+}
 
 
 
