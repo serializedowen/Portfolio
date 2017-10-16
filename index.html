@@ -61,9 +61,22 @@
             </div>
         </div>
         <section id="london">
-            <div class="ui text container header-text">
-                <h1 class="ui inverted header" id="op">Yuan Wang</h1>
-                <h2 id="op2">Welcome to my playground</h2>
+            <div class="ui text container">
+                <div class="row header-text">
+                    <h1 class="ui inverted header" id="op">Yuan Wang</h1>
+                    <h2 id="op2">Welcome to my playground</h2>
+                    <div class="learn_more ui middle aligned">
+                        <span>
+                            <a href="#aboutme">
+                                <i class="icons">
+                                    <i class="pointing down huge icon learn_more" id="learn_more_i"></i>
+                                    <p class="hidden" id="learn_more_p">Learn More</p>
+                                </i>
+                                <!--<p id="learn_more_p">learn more</p>-->
+                            </a>
+                        </span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -220,7 +233,7 @@
     </div>
     </section>
 
-    <div class="ui vertical stripe segment" id="projects">
+    <div class="ui vertical stripe segment" id="projects_con">
         <div class="ui stackable grid container">
             <section id="edu_sec">
                 <div class="row">
@@ -235,7 +248,7 @@
                     <div class="ui items">
                         <div class="item">
                             <div class="image">
-                                <a href="http://web.cs.toronto.edu" style="cursor: pointer;"><img src="./assets/u_of_t.png"></a>
+                                <a href="http://web.cs.toronto.edu" style="cursor: pointer;"><img src="./assets/u_of_t.png" class="ui small image"></a>
                             </div>
                             <div class="content">
                                 <a class="header title" href="http://web.cs.toronto.edu/">University of Toronto</a>
@@ -263,7 +276,7 @@
                         <div class="ui hidden divider"></div>
                         <div class="item">
                             <div class="image">
-                                <a href="http://www.teach.cs.toronto.edu/~csc384h/fall/"><img src="./assets/images/ai_icon.png"></a>
+                                <a href="http://www.teach.cs.toronto.edu/~csc384h/fall/"><img src="./assets/images/ai_icon.png" class="ui small image"></a>
                             </div>
                             <div class="content">
                                 <a class="header title">Teaching Assistant</a>
@@ -272,8 +285,8 @@
                                     <span>2017 Winter Semester</span>
                                 </div>
                                 <div class="description">
-                                    <p class="desc">Win the second in the course competition for the Sokoban. The Prof. invited me to share my ideas
-                                        and assist other students in the following semester.</p>
+                                    <p class="desc">Designed the algorithms to solve Sokoban problems and won 2nd in the course competition. The Prof. invited me to be TA for sharing my ideas
+                                        and assisting other students in the following semester.</p>
                                 </div>
                             </div>
                         </div>
@@ -293,10 +306,10 @@
                     <div class="ui items">
                         <div class="item">
                             <div class="image">
-                                <a href="http://web.cs.toronto.edu" style="cursor: pointer;"><img src="./assets/images/Sanofi_Logo_2011.jpg"></a>
+                                <a href="http://www.sanofipasteur.ca/" style="cursor: pointer;"><img src="./assets/images/Sanofi_Logo_2011.jpg" class="ui small image"></a>
                             </div>
                             <div class="content">
-                                <a class="header title" href="http://www.sanofipasteur.ca/">Sanofi Pasteur</a>
+                                <a class="header title pointer" id="sanofi_a" href="http://www.sanofipasteur.ca/">Sanofi Pasteur&nbsp;&nbsp;<i class="pointing right icon" id="sanofi_i"></i></a>
                                 <p>Web & Data Developer</p>
                                 <div class="meta">
                                     <span>Sep.2012 – Jun.2017</span>
@@ -338,10 +351,10 @@
                         <div class="ui hidden divider"></div>
                         <div class="item">
                             <div class="image">
-                                <a href="http://en.chenzhu-inst.com/"><img src="./assets/images/chenzhu_logo.jpg"></a>
+                                <a href="http://en.chenzhu-inst.com/"><img src="./assets/images/chenzhu_logo.jpg" class="ui small image"></a>
                             </div>
                             <div class="content">
-                                <a class="header title">Shanghai Chenzhu Instrument Co.,Ltd</a>
+                                <a class="header title pointer" id="chenzhu_a" href="http://en.chenzhu-inst.com/">Shanghai Chenzhu Instrument Co.,Ltd&nbsp;&nbsp;<i class="pointing right icon" id="chenzhu_i"></i></a>
                                 <p>Web Developer</p>
                                 <div class="meta">
                                     <span>2017 Winter Semester</span>
@@ -457,5 +470,5 @@
 </body>
 <script src="js/terminal_emulator.js"></script>
 <script src="js/semantic_ui_helper.js"></script>
-
+<script src="js/smooth_scroll.js"></script>
 </html>

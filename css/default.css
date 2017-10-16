@@ -24,10 +24,46 @@
     font-size: 4em;
     font-weight: normal;
 }
+
 .masthead h2 {
     font-size: 1.7em;
     font-weight: normal;
 }
+
+.learn_more{
+    /*position: absolute;*/
+    margin-top: 50%;
+}
+
+p.hidden {
+    opacity: 0;
+}
+
+
+#learn_more_i {
+    -webkit-transition: all 0.02s ease-in-out;
+    -moz-transition: all 0.02s ease-in-out;
+    -o-transition: all 0.02s ease-in-out;
+    -ms-transition: all 0.02s ease-in-out;
+}
+
+#learn_more_p {
+    -webkit-transition: all 0.02s ease-in-out;
+    -moz-transition: all 0.02s ease-in-out;
+    -o-transition: all 0.02s ease-in-out;
+    -ms-transition: all 0.02s ease-in-out;
+
+}
+
+
+
+
+
+a > .icons {
+    color: white;
+}
+
+
 
 .ui.vertical.stripe {
     padding: 8em 0em;
@@ -78,13 +114,17 @@
 
 
 #aboutme {
- background-color: #ddd;
+    background-color: #ddd;
 }
+
+/*#projects_con {*/
+    /*background-color: #ffff00;*/
+/*}*/
 
 
 .ui.items>.item>.image>a>img {
     display: block;
-    width: 100%;
+    /*width: 100%;*/
     height: auto;
     border-radius: .125rem;
     border: none;
@@ -93,6 +133,13 @@
 .ui.items>.item>.content>.header.title:not(.ui){
     font-size: 1.7em;
 }
+
+
+.pointing.right.hover {
+    margin-left: 100px;
+}
+
+
 
 .desc {
     font-size: 1.15em !important;
