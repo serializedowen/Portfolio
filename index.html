@@ -52,10 +52,11 @@
                 <a class="toc item">
                     <i class="sidebar icon"></i>
                 </a>
-                <a class="active item">About ME</a>
-                <a class="item">Skills</a>
-                <a class="item">Education</a>
-                <a class="item">Experience</a>
+                <a class="active item">Home</a>
+                <a class="item" href="#aboutme_sec">About ME</a>
+                <a class="item" href="#skills_sec">Skills</a>
+                <a class="item" href="#edu_sec">Education</a>
+                <a class="item" href="#exp_sec">Experience</a>
                 <a class="item">Projects</a>
             </div>
         </div>
@@ -67,8 +68,8 @@
         </section>
 
     </div>
-
-    <div class="ui vertical stripe segment" id="aboutme">
+    <section id="aboutme_sec">
+        <div class="ui vertical stripe segment" id="aboutme">
         <div class="ui stackable grid container">
             <div class="ui middle aligned row">
                 <h1>About ME</h1>
@@ -115,12 +116,14 @@
 
         </div>
     </div>
+    </section>
 
 
     <div class="ui vertical stripe segment" id="talk_is_cheap">
     </div>
 
-    <div class="ui top aligned vertical stripe segment" id="progress_container">
+    <section id="skills_sec">
+        <div class="ui top aligned vertical stripe segment" id="progress_container">
         <div class="ui stackable grid container">
             <div class="row">
                 <h1>Skills</h1>
@@ -215,72 +218,78 @@
             </div>
         </div>
     </div>
+    </section>
 
     <div class="ui vertical stripe segment" id="projects">
         <div class="ui stackable grid container">
-            <div class="row">
-                <h1>Education</h1>
-            </div>
-            <!--<div class="row">-->
-                <!--<div class="ui hidden divider"></div>-->
-            <!--</div>-->
-            <div class="row">
-                <div class="ui">
-                <div class="ui items">
-                    <div class="item">
-                        <div class="image">
-                            <a href="http://web.cs.toronto.edu" style="cursor: pointer;"><img src="./assets/u_of_t.png"></a>
+            <section id="edu_sec">
+                <div class="row">
+                    <h1>Education</h1>
+                </div>
+                <div class="ui divider hidden"></div>
+                <!--<div class="row">-->
+                    <!--<div class="ui hidden divider"></div>-->
+                <!--</div>-->
+                <div class="row">
+                    <div class="ui">
+                    <div class="ui items">
+                        <div class="item">
+                            <div class="image">
+                                <a href="http://web.cs.toronto.edu" style="cursor: pointer;"><img src="./assets/u_of_t.png"></a>
+                            </div>
+                            <div class="content">
+                                <a class="header title" href="http://web.cs.toronto.edu/">University of Toronto</a>
+                                <p>Honours of Bachelor of Science with Distinction<br/>Major in Computer Science</p>
+                                <div class="meta">
+                                    <span>Sep.2012 – Nov.2016</span>
+                                </div>
+                                <div class="description">
+                                    <p class="desc">Relevant Coursework:</p>
+                                    <ul>
+                                        <li class="desc">Computer Graphics</li>
+                                        <li class="desc">Introduction to Visual Computing</li>
+                                        <li class="desc">Natural Language Computing</li>
+                                        <li class="desc">Machine Learning and Data Mining</li>
+                                        <li class="desc">Neural Network and Machine Learning</li>
+                                        <li class="desc">Introduction to Artificial Intelligence</li>
+                                        <li class="desc">Knowledge Representation & Reasoning</li>
+                                    </ul>
+                                </div>
+                                <div class="extra">
+                                    <!--<div class="ui right floated button">hello</div>-->
+                                </div>
+                            </div>
                         </div>
-                        <div class="content">
-                            <a class="header title" href="http://web.cs.toronto.edu/">University of Toronto</a>
-                            <p>Honours of Bachelor of Science with Distinction<br/>Major in Computer Science</p>
-                            <div class="meta">
-                                <span>Sep.2012 – Nov.2016</span>
+                        <div class="ui hidden divider"></div>
+                        <div class="item">
+                            <div class="image">
+                                <a href="http://www.teach.cs.toronto.edu/~csc384h/fall/"><img src="./assets/images/ai_icon.png"></a>
                             </div>
-                            <div class="description">
-                                <p class="desc">Relevant Coursework:</p>
-                                <ul>
-                                    <li class="desc">Computer Graphics</li>
-                                    <li class="desc">Introduction to Visual Computing</li>
-                                    <li class="desc">Natural Language Computing</li>
-                                    <li class="desc">Machine Learning and Data Mining</li>
-                                    <li class="desc">Neural Network and Machine Learning</li>
-                                    <li class="desc">Introduction to Artificial Intelligence</li>
-                                    <li class="desc">Knowledge Representation & Reasoning</li>
-                                </ul>
-                            </div>
-                            <div class="extra">
-                                <!--<div class="ui right floated button">hello</div>-->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ui hidden divider"></div>
-                    <div class="item">
-                        <div class="image">
-                            <a href="http://www.teach.cs.toronto.edu/~csc384h/fall/"><img src="./assets/images/ai_icon.png"></a>
-                        </div>
-                        <div class="content">
-                            <a class="header title">Teaching Assistant</a>
-                            <p>Introduction to Artificial Intelligence</p>
-                            <div class="meta">
-                                <span>2017 Winter Semester</span>
-                            </div>
-                            <div class="description">
-                                <p class="desc">Win the second in the course competition for the Sokoban. The Prof. invited me to share my ideas
-                                    and assist other students in the following semester.</p>
+                            <div class="content">
+                                <a class="header title">Teaching Assistant</a>
+                                <p>Introduction to Artificial Intelligence</p>
+                                <div class="meta">
+                                    <span>2017 Winter Semester</span>
+                                </div>
+                                <div class="description">
+                                    <p class="desc">Win the second in the course competition for the Sokoban. The Prof. invited me to share my ideas
+                                        and assist other students in the following semester.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            </div>
+                </div>
+                <div class="ui divider"></div>
+            </section>
 
-            <div class="ui divider"></div>
-            <div class="row">
-                <h1>Working Experience</h1>
-            </div>
-            <div class="row">
-                <div class="ui">
+            <section id="exp_sec">
+                <div class="row">
+                    <h1>Working Experience</h1>
+                </div>
+                <div class="ui divider hidden"></div>
+
+                <div class="row">
                     <div class="ui items">
                         <div class="item">
                             <div class="image">
@@ -333,7 +342,7 @@
                             </div>
                             <div class="content">
                                 <a class="header title">Shanghai Chenzhu Instrument Co.,Ltd</a>
-                                <p>Introduction to Artificial Intelligence</p>
+                                <p>Web Developer</p>
                                 <div class="meta">
                                     <span>2017 Winter Semester</span>
                                 </div>
@@ -359,7 +368,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
 
         </div>
