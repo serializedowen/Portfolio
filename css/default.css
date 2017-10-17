@@ -56,11 +56,17 @@ p.hidden {
 }
 
 
-
-
-
 a > .icons {
     color: white;
+}
+
+
+a:hover > .icons {
+    color: white;
+}
+
+a:hover > .icon.pointing.right{
+    color: rgba(0,0,0,.85);
 }
 
 
@@ -148,6 +154,13 @@ a > .icons {
 
 .ui.items>.item>.image+.content {
     width: 100%;
+}
+
+
+.side-circle.ui.rail {
+    margin-top: 100vh;
+    margin-left: 20px;
+    display: block !important;
 }
 
 

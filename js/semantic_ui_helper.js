@@ -34,4 +34,11 @@ $("#learn_more_i").hover(
         $("#learn_more_p").animate({opacity: 0});
         $("#learn_more_i").animate({opacity: 100});
     }
-)
+);
+
+
+$('.ui.sticky')
+    .sticky({
+        context: '#context-sticky'
+    })
+;
