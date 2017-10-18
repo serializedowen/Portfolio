@@ -1,10 +1,33 @@
-function pic_shape() {
-    //$('.shape').shape('flip up');
-    setTimeout(pic_shape, 10000);
-    $('.shape').shape('flip up');
-}
+// function pic_shape() {
+//     //$('.shape').shape('flip up');
+//     setTimeout(pic_shape, 10000);
+//     $('.shape').shape('flip up');
+// }
+//
+// pic_shape();
 
-pic_shape();
+// function pauseBrowser(millis) {
+//     var date = Date.now();
+//     var curDate = null;
+//     do {
+//         curDate = Date.now();
+//     } while (curDate-date < millis);
+// }
+//
+var shape_change = function() {
+    $('.shape')
+        .shape('flip right');
+};
+
+
+
+
+window.onload = setInterval(shape_change, 10000);
+
+
+
+
+
 
 $("#sanofi_a").hover(
     function () {
